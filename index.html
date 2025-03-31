@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">   
 </head>
-<body>
-    
+<body onload="init()">
+    <h1>Tic Tac Toe</h1>
+    <div>
+        <img id="x" class="turn-icon-size" src="./img/icon/icons8-x-64.png" alt="">
+        <img id="o" class="turn-icon-size grayscale" src="./img/icon/icons8-ausgefüllter-kreis-96.png" alt="">
+    </div>
+    <div id="gameContent"></div>
+    <div class="position-icon" id="gameInfo"></div>
+    <button onclick="restart()">Restart</button>
 </body>
 </html>
