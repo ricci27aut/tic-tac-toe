@@ -111,8 +111,9 @@ function drawWinningLine(combination) {
 
 function restart() {
     fields = [null, null, null, null, null, null, null, null, null,];
-    document.getElementById('x').classList.remove('grayscale')
-    document.getElementById('o').classList.add('grayscale')
+    document.getElementById('x').classList.remove('grayscale');
+    document.getElementById('o').classList.add('grayscale');
+    currentPlayer = 'cross';
     init();
     counter();
     winer = false;
